@@ -1,5 +1,5 @@
 /*
-  A simple component for searching Twitch.tv's v5 (Kraken) API.
+  A simple component for searching Twitch.tv's v5 API.
   This component returns the current top 10 games by default, or if no results are returned.
   Built to demonstrate async API calls using axios, component lifecycle methods,
   event handling and passing props to child components.
@@ -7,12 +7,12 @@
 */
 import React, { Component } from 'react';
 import axios from 'axios'
-import Search from './search.jsx';
 
 // MUI imports
 import Grid from '@material-ui/core/Grid';
 
 // Local imports
+import Search from './search.jsx';
 import Games from './games';
 
 // API Client ID key in <project>/.env
