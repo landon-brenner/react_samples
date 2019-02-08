@@ -4,17 +4,16 @@ import PropTypes from 'prop-types';
 
 // MUI imports
 import Grid from '@material-ui/core/Grid';
-import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
 import InputAdornment from '@material-ui/core/InputAdornment';
 import IconButton from '@material-ui/core/IconButton';
 import Tooltip from '@material-ui/core/Tooltip';
 import ClearIcon from '@material-ui/icons/Clear';
+import SearchIcon from '@material-ui/icons/Search';
 
 // ES6 destructuring makes it easy to see props consumed by this component
 const Search = ({
   input,
-  getTopGames,
   handleInputChange,
   handleKeyPress,
   handleSearchClick,
@@ -50,18 +49,11 @@ const Search = ({
           />
         </Grid>
         <Grid item>
-          <Button
+          <IconButton
             onClick={handleSearchClick}
           >
-            Search
-          </Button>
-        </Grid>
-        <Grid item>
-          <Button
-            onClick={getTopGames}
-          >
-            Get Top 10
-          </Button>
+            <SearchIcon />
+          </IconButton>
         </Grid>
       </Grid>
     </>
@@ -71,7 +63,6 @@ const Search = ({
 // Prop type checking - destructured props can be copy/pasted right here
 Search.propTypes = {
   input: PropTypes.string,
-  getTopGames: PropTypes.func.isRequired,
   handleInputChange: PropTypes.func.isRequired,
   handleKeyPress: PropTypes.func.isRequired,
   handleSearchClick: PropTypes.func.isRequired,

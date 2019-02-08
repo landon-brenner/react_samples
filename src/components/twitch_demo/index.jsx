@@ -12,7 +12,7 @@ import axios from 'axios'
 import Grid from '@material-ui/core/Grid';
 
 // Local imports
-import Search from './search.jsx';
+import Search from './search';
 import Games from './games';
 
 // API Client ID key in <project>/.env
