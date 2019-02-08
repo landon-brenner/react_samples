@@ -6,5 +6,6 @@ A collection of samples of React components showing implementation of various fe
 * [Material-UI](https://material-ui.com/)
 * [axios](https://www.npmjs.com/package/axios)
 * [css-in-js](https://cssinjs.org/)
+* Testing via [Jest](https://jestjs.io) and [Enzyme](https://airbnb.io/enzyme/)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
