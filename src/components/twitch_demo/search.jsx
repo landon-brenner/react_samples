@@ -13,25 +13,25 @@ import ClearIcon from '@material-ui/icons/Clear';
 
 // ES6 prop destructuring
 const Search = ({
-	input,
-	getTopGames,
-	handleInputChange,
-	handleKeyPress,
-	handleSearchClick,
+  input,
+  getTopGames,
+  handleInputChange,
+  handleKeyPress,
+  handleSearchClick,
   handleClearSearch
 }) => {
 
-	return (
+  return (
     <>
       <Grid container>
         <Grid item style={{ flexGrow: 1 }}>
-    			<TextField
-    				placeholder='Search popular games on Twitch!'
+          <TextField
+            placeholder='Search popular games on Twitch!'
             label='Search'
             fullWidth
-    				value={input}
-    				onChange={handleInputChange}
-    				onKeyPress={handleKeyPress}
+            value={input}
+            onChange={handleInputChange}
+            onKeyPress={handleKeyPress}
             InputLabelProps={{ shrink: true }}
             InputProps={{
               endAdornment: (
@@ -47,25 +47,25 @@ const Search = ({
                 </InputAdornment>
               ),
             }}
-    			/>
+          />
         </Grid>
         <Grid item>
-    			<Button
-    				onClick={handleSearchClick}
-    			>
-    				Search
-    			</Button>
+          <Button
+            onClick={handleSearchClick}
+          >
+            Search
+          </Button>
         </Grid>
         <Grid item>
-    			<Button
-    				onClick={getTopGames}
-    			>
-    				Get Top 10
-    			</Button>
+          <Button
+            onClick={getTopGames}
+          >
+            Get Top 10
+          </Button>
         </Grid>
       </Grid>
     </>
-	)
+  )
 }
 
 export default Search

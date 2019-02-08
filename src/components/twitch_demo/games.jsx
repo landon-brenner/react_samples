@@ -21,16 +21,16 @@ const styles = theme => ({
 })
 
 const Games = ({games, classes}) => {
-	return (
-		<div className={classes.gameCards}>
-			{ games.map(game => (
-				<GameCard
-					key={game._id}
-					game={game}
-				/>
-			))}
-		</div>
-	);
+  return (
+    <div className={classes.gameCards}>
+      { games.map(game => (
+        <GameCard
+          key={game._id}
+          game={game}
+        />
+      ))}
+    </div>
+  );
 }
 
 Games.propTypes = {

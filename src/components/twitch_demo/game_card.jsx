@@ -16,16 +16,16 @@ const styles = theme => ({
 })
 
 const GameCard = ({game, classes}) => {
-	return (
-		<div className='game-cards'>
-			<img
-				className={classes.gameBox}
-				src={game.box.medium}
-				title={game.localized_name}
-				alt={game.name}
-			/>
-		</div>
-	);
+  return (
+    <div className='game-cards'>
+      <img
+        className={classes.gameBox}
+        src={game.box.medium}
+        title={game.localized_name}
+        alt={game.name}
+      />
+    </div>
+  );
 }
 
 // Prop Type Checking
