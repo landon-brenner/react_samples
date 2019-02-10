@@ -22,39 +22,42 @@ const Search = ({
 
   return (
     <>
-      <Grid container>
-        <Grid item style={{ flexGrow: 1 }}>
-          <TextField
-            placeholder='Search popular games on Twitch!'
-            label='Search'
-            fullWidth
-            value={input}
-            onChange={handleInputChange}
-            onKeyPress={handleKeyPress}
-            InputLabelProps={{ shrink: true }}
-            InputProps={{
-              endAdornment: (
-                <InputAdornment position='end'>
-                  {input && <Tooltip title='Clear Filter'>
-                    <IconButton
-                      aria-label='Clear input'
-                      onClick={handleClearSearch}
-                    >
-                      <ClearIcon />
-                    </IconButton>
-                  </Tooltip>}
-                </InputAdornment>
-              ),
-            }}
-          />
-        </Grid>
-        <Grid item>
-          <IconButton
-            onClick={handleSearchClick}
-          >
-            <SearchIcon />
-          </IconButton>
-        </Grid>
+      <Grid container item style={{ flexGrow: 1 }}>
+        <TextField
+          placeholder='Search popular games on Twitch!'
+          label='Search'
+          fullWidth
+          value={input}
+          onChange={handleInputChange}
+          onKeyPress={handleKeyPress}
+          InputLabelProps={{ shrink: true }}
+          InputProps={{
+            startAdornment: (
+              <InputAdornment position='start'>
+                <Tooltip title='Search'>
+                  <IconButton
+                    aria-label='Search'
+                    onClick={handleSearchClick}
+                  >
+                    <SearchIcon />
+                  </IconButton>
+                </Tooltip>
+              </InputAdornment>
+            ),
+            endAdornment: (
+              <InputAdornment position='end'>
+                {input && <Tooltip title='Clear Filter'>
+                  <IconButton
+                    aria-label='Clear input'
+                    onClick={handleClearSearch}
+                  >
+                    <ClearIcon />
+                  </IconButton>
+                </Tooltip>}
+              </InputAdornment>
+            ),
+          }}
+        />
       </Grid>
     </>
   )
