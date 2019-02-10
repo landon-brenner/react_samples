@@ -7,6 +7,7 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import SearchIcon from '@material-ui/icons/Search';
+import TimelineIcon from '@material-ui/icons/Timeline';
 
 
 const DashItems = () => {
@@ -21,6 +22,16 @@ const DashItems = () => {
           <SearchIcon />
         </ListItemIcon>
         <ListItemText primary="Twitch API Demo" />
+      </ListItem>
+      <ListItem
+        button
+        component={Link}
+        to='/charts'
+      >
+        <ListItemIcon>
+          <TimelineIcon />
+        </ListItemIcon>
+        <ListItemText primary="Recharts Examples" />
       </ListItem>
     </div>
   );
