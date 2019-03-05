@@ -25,6 +25,7 @@ import styles from '../../styles/dash_styles'
 
 import DashItems from '../presenters/dash_items';
 import Twitch from '../twitch_demo/';
+import HeartChart from '../presenters/heart_chart';
 
 class Dashboard extends Component {
   state = {
@@ -93,6 +94,10 @@ class Dashboard extends Component {
               <Route
                 path='/twitch'
                 render={ props => (<Twitch {...props} classes={classes}/>)}
+              />
+              <Route
+                path='/charts'
+                render={ props => (<HeartChart {...props} classes={classes}/>)}
               />
             </Switch>
           </main>
