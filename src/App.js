@@ -1,7 +1,4 @@
 import React, { Component } from 'react';
-
-//import Sandbox from './components/sandbox';
-//import Autocomplete from './components/autocomplete';
 import Dashboard from './components/containers/dashboard';
 
 
