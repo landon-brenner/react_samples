@@ -8,6 +8,7 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import SearchIcon from '@material-ui/icons/Search';
 import TimelineIcon from '@material-ui/icons/Timeline';
+import StoreIcon from '@material-ui/icons/Store';
 
 
 const DashItems = () => {
@@ -32,6 +33,16 @@ const DashItems = () => {
           <TimelineIcon />
         </ListItemIcon>
         <ListItemText primary="Recharts Examples" />
+      </ListItem>
+      <ListItem
+        button
+        component={Link}
+        to='/state'
+      >
+        <ListItemIcon>
+          <StoreIcon />
+        </ListItemIcon>
+        <ListItemText primary="Store Management" />
       </ListItem>
     </div>
   );
