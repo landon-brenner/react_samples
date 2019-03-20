@@ -1,4 +1,4 @@
-// Counter component using React hooks to manage state
+// Functional counter component using React hooks to manage state
 import React, { useState } from 'react';
 
 import Display from './display';

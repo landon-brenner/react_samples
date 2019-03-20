@@ -19,7 +19,7 @@ class LocalCounter extends Component {
   }
 
   resetCount = () => {
-    this.setState({count: 0})
+    this.setState({ count: 0 })
   }
 
   render () {
