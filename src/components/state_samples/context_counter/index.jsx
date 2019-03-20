@@ -2,7 +2,7 @@ import React from 'react';
 
 import ContextProvider from './context_provider';
 import CounterContext from './counter_context';
-import Display from './display';
+import Display from '../display';
 
 // This component uses our context provider to wrap another
 const ContextCounter = () => {
